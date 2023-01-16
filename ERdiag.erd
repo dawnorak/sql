@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="ERdiag.erd">
+	<entities>
+		<data-source id="postgres-jdbc-185a495313b-2312c7ffa406e1ec">
+			<entity id="1" name="department" fq-name="public.department" order="0" border-width="3" x="148" y="68">
+				<path name="public"/>
+				<path name="test"/>
+			</entity>
+			<entity id="2" name="employee" fq-name="public.employee" order="1" x="20" y="20">
+				<path name="public"/>
+				<path name="test"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fk_mgr" fq-name="public.employee.fk_mgr" type="fk" pk-ref="1" fk-ref="2"/>
+	</relations>
+</diagram>
